@@ -1,10 +1,22 @@
 .header {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  background-color: #1f2937;
-  color: var(--orange-5);
-  box-shadow:
-    0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	container-type: inline-size;
+	border: var(--border-thicker);
+	padding: var(--size-6);
+	background-color: var(--color-bg);
+	box-shadow: var(--shadow-hard);
+}
+
+.title {
+	font-size: clamp(var(--font-size-4), 7cqi, var(--font-size-7));
+	font-weight: 700;
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin-bottom: var(--size-8);
+}
+
+.subtitle {
+	font-size: clamp(var(--font-size-3), 3cqi, var(--font-size-5));
+	font-weight: 400;
+	margin: 0;
 }

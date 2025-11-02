@@ -1,0 +1,23 @@
+.section {
+	border: var(--border-thick);
+	padding: var(--size-5);
+	margin-bottom: var(--size-5);
+	box-shadow: var(--shadow-hard);
+}
+
+.spacingNormal {
+	padding: var(--size-5);
+}
+
+.spacingCompact {
+	padding: var(--size-3);
+}
+
+.sectionHeader {
+	font-size: var(--font-size-4);
+	font-weight: 600;
+	margin: 0 0 var(--size-4);
+	text-transform: uppercase;
+	border-bottom: var(--border-thick);
+	padding-bottom: var(--size-2);
+}
