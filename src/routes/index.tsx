@@ -14,12 +14,13 @@ function App() {
 		<div className={styles.wrapper}>
 			<Header
 				title="BLACK ATOM INDUSTRIES"
-				subtitle="COHESIVE THEME SYSTEMS"
+				subtitle="THEMES TO FORGET"
 				meta="EST. 2025"
 			/>
 
 			<main>
 				<Section title="OVERVIEW">
+					<h2>COHESIVE THEME SYSTEMS</h2>
 					<p>
 						A collection of cohesive, elegant dark/light themes for various
 						applications and platforms.
