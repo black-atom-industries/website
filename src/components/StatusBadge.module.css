@@ -1,0 +1,20 @@
+.badge {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	font-family: var(--font-mono);
+	font-size: 12px;
+	letter-spacing: 0.1em;
+}
+
+.label {
+	color: var(--ink-60);
+	text-transform: uppercase;
+}
+
+.value {
+	padding: 4px 12px;
+	border: var(--stroke);
+	font-weight: 600;
+	text-transform: uppercase;
+}

@@ -1,95 +1,78 @@
-/* the props */
-@import "open-props/style";
+/* Black Atom Industries — Design System */
 
-/* optional imports that use the props */
-@import "open-props/normalize";
-@import "open-props/buttons";
-
-/* just light or dark themes */
-@import "open-props/normalize/light";
-@import "open-props/buttons/light";
-
-/* individual imports */
-@import "open-props/indigo";
-@import "open-props/easings";
-@import "open-props/animations";
-@import "open-props/sizes";
-@import "open-props/gradients";
-
-/* TX-02 Font Family */
-@font-face {
-	font-family: "TX-02";
-	src: url("/assets/fonts/TX-02/TX-02-Regular.ttf") format("truetype");
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "TX-02";
-	src: url("/assets/fonts/TX-02/TX-02-Medium.ttf") format("truetype");
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "TX-02";
-	src: url("/assets/fonts/TX-02/TX-02-SemiBold.ttf") format("truetype");
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "TX-02";
-	src: url("/assets/fonts/TX-02/TX-02-Bold.ttf") format("truetype");
-	font-weight: 700;
-	font-style: normal;
-}
-
-/* Brutalist Design System */
 :root {
-	/* Override Open Props fonts with TX-02 */
-	--font-sans: "TX-02", monospace;
-	--font-serif: "TX-02", monospace;
-	--font-mono: "TX-02", monospace;
+	--ink: #0a0a0a;
+	--paper: #f4f1ea;
 
-	/* Custom brutalist properties */
-	--border-thick: 2px solid var(--sand-11);
-	--border-thicker: 4px solid var(--sand-11);
-	--color-bg: var(--sand-1);
-	--color-fg: var(--sand-11);
+	--ink-90: rgba(10, 10, 10, 0.9);
+	--ink-70: rgba(10, 10, 10, 0.7);
+	--ink-60: rgba(10, 10, 10, 0.6);
+	--ink-40: rgba(10, 10, 10, 0.4);
+	--ink-30: rgba(10, 10, 10, 0.3);
+	--ink-20: rgba(10, 10, 10, 0.2);
+	--ink-10: rgba(10, 10, 10, 0.1);
+	--ink-05: rgba(10, 10, 10, 0.05);
 
-	--shadow-hard: 15px 15px 0px var(--sand-9);
+	--font-display: "Archivo Black", "Helvetica Neue", Impact, sans-serif;
+	--font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+	--space-xs: 4px;
+	--space-sm: 8px;
+	--space-md: 16px;
+	--space-lg: 32px;
+	--space-xl: 48px;
+	--space-2xl: 80px;
+
+	--stroke: 1px solid var(--ink);
+	--stroke-muted: 1px solid var(--ink-20);
 }
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
 body {
 	margin: 0;
+	padding: 0;
+	background: var(--paper);
+	color: var(--ink);
 	font-family: var(--font-mono);
-	background-color: var(--sand-9);
-
-	color: var(--color-fg);
-	text-rendering: optimizeLegibility;
+	font-size: 14px;
+	line-height: 1.55;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-	font-family: var(--font-mono);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	font-family: var(--font-display);
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
 p {
-	margin-bottom: var(--size-5);
+	margin: 0 0 1em;
+	color: var(--ink-70);
+}
+
+p:last-child {
+	margin-bottom: 0;
 }
 
 a {
-	color: var(--color-fg);
-	text-decoration: underline;
-	text-decoration-color: var(--color-fg);
-	text-decoration-thickness: 2px;
-	text-underline-offset: 2px;
+	color: var(--ink);
+	text-decoration: none;
+}
 
-	&:hover {
-		background: var(--color-fg);
-		color: var(--color-bg);
-		text-decoration-color: var(--color-fg);
-	}
+strong {
+	font-weight: 700;
+	color: var(--ink);
 }

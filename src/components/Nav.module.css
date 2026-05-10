@@ -1,0 +1,53 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 40px;
+	border-bottom: var(--stroke);
+	font-family: var(--font-mono);
+	font-size: 12px;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.brand {
+	display: flex;
+	align-items: center;
+	gap: 14px;
+}
+
+.brandName {
+	font-weight: 600;
+	letter-spacing: 0.12em;
+	font-size: 13px;
+}
+
+.links {
+	display: flex;
+	gap: 32px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.link {
+	color: var(--ink);
+	opacity: 0.85;
+	transition: opacity 0.2s;
+}
+
+.link:hover {
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	.nav {
+		padding: 16px 24px;
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+
+	.links {
+		gap: 20px;
+	}
+}
