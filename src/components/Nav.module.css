@@ -3,7 +3,6 @@
 	align-items: center;
 	justify-content: space-between;
 	padding: 20px 40px;
-	border-bottom: var(--stroke);
 	font-family: var(--font-mono);
 	font-size: 12px;
 	letter-spacing: 0.18em;

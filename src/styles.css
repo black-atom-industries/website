@@ -1,17 +1,24 @@
 /* Black Atom Industries — Design System */
 
 :root {
-	--ink: #0a0a0a;
-	--paper: #f4f1ea;
+	--ink: oklch(0.26 0 0);
+	--paper: oklch(0.92 0.032 89);
 
-	--ink-90: rgba(10, 10, 10, 0.9);
-	--ink-70: rgba(10, 10, 10, 0.7);
-	--ink-60: rgba(10, 10, 10, 0.6);
-	--ink-40: rgba(10, 10, 10, 0.4);
-	--ink-30: rgba(10, 10, 10, 0.3);
-	--ink-20: rgba(10, 10, 10, 0.2);
-	--ink-10: rgba(10, 10, 10, 0.1);
-	--ink-05: rgba(10, 10, 10, 0.05);
+	--ink-90: color-mix(in oklch, var(--ink) 90%, transparent);
+	--ink-70: color-mix(in oklch, var(--ink) 70%, transparent);
+	--ink-60: color-mix(in oklch, var(--ink) 60%, transparent);
+	--ink-40: color-mix(in oklch, var(--ink) 40%, transparent);
+	--ink-30: color-mix(in oklch, var(--ink) 30%, transparent);
+	--ink-20: color-mix(in oklch, var(--ink) 20%, transparent);
+	--ink-10: color-mix(in oklch, var(--ink) 10%, transparent);
+	--ink-05: color-mix(in oklch, var(--ink) 5%, transparent);
+
+	--paper-80: color-mix(in oklch, var(--paper) 80%, transparent);
+	--paper-75: color-mix(in oklch, var(--paper) 75%, transparent);
+	--paper-60: color-mix(in oklch, var(--paper) 60%, transparent);
+	--paper-50: color-mix(in oklch, var(--paper) 50%, transparent);
+	--paper-35: color-mix(in oklch, var(--paper) 35%, transparent);
+	--paper-30: color-mix(in oklch, var(--paper) 30%, transparent);
 
 	--font-display: "Archivo Black", "Helvetica Neue", Impact, sans-serif;
 	--font-mono: "JetBrains Mono", ui-monospace, monospace;

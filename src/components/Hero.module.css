@@ -1,17 +1,18 @@
 .hero {
-	padding: 80px 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 64px;
-	min-height: 520px;
+	background: var(--ink);
+	padding: 56px 64px;
 }
 
 .markWrapper {
-	width: 320px;
-	height: 320px;
-	overflow: hidden;
+	width: 360px;
+	height: 360px;
 	flex-shrink: 0;
+	overflow: hidden;
+	border: 1px solid var(--paper-35);
 }
 
 .mark {
@@ -23,49 +24,49 @@
 	max-width: 560px;
 }
 
-.eyebrow {
-	font-family: var(--font-mono);
-	font-size: 11px;
-	letter-spacing: 0.35em;
-	text-transform: uppercase;
-	color: var(--ink-60);
-	margin-bottom: 20px;
-}
-
-.title {
+.titleMain {
 	font-family: var(--font-display);
-	font-size: clamp(48px, 6vw, 72px);
+	font-size: clamp(48px, 7vw, 72px);
 	letter-spacing: -0.02em;
 	line-height: 0.9;
 	text-transform: uppercase;
+	color: var(--paper);
+	margin: 0;
 }
 
-.tagline {
+.titleSub {
 	font-family: var(--font-mono);
-	font-size: 16px;
-	letter-spacing: 0.2em;
+	font-size: clamp(14px, 1.8vw, 22px);
+	letter-spacing: 0.5em;
 	text-transform: uppercase;
-	margin-top: 24px;
-	color: var(--ink-70);
+	color: var(--paper-75);
+	margin-top: 10px;
 }
 
 .rule {
 	height: 1px;
-	background: var(--ink);
-	margin-top: 32px;
-	width: 280px;
+	background: var(--paper-30);
+	margin: 24px 0;
+	width: 100%;
+}
+
+.tagline {
+	font-family: var(--font-mono);
+	font-size: 11px;
+	letter-spacing: 0.35em;
+	text-transform: uppercase;
+	color: var(--paper-50);
 }
 
 @media (max-width: 768px) {
 	.hero {
 		flex-direction: column;
-		padding: 48px 24px;
+		padding: 40px 24px;
 		gap: 40px;
-		min-height: auto;
 	}
 
 	.markWrapper {
-		width: 200px;
-		height: 200px;
+		width: 240px;
+		height: 240px;
 	}
 }

@@ -1,6 +1,6 @@
 .section {
 	padding: 48px 40px;
-	border-top: var(--stroke);
+	border-bottom: var(--stroke);
 }
 
 .marker {
@@ -14,6 +14,7 @@
 
 .title {
 	font-family: var(--font-display);
+	color: var(--ink);
 	font-size: 32px;
 	letter-spacing: -0.01em;
 	line-height: 0.95;

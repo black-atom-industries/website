@@ -14,9 +14,12 @@ export const Route = createFileRoute("/")({
 
 function App() {
 	return (
-		<div className={styles.wrapper}>
-			<Nav />
+		<div>
+			<div className={styles.wrapper}>
+				<Nav />
+			</div>
 			<Hero />
+			<div className={styles.wrapper}>
 
 			{/* biome-ignore lint/correctness/useUniqueElementIds: page-level nav anchor */}
 			<Section id="overview" title="COHESIVE THEME SYSTEMS">
@@ -87,6 +90,7 @@ function App() {
 				<span>BLACK ATOM INDUSTRIES</span>
 				<span>EST. 2025</span>
 			</footer>
+			</div>
 		</div>
 	);
 }
