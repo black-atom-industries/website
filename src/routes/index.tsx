@@ -43,28 +43,26 @@ function App() {
 			<Section id="status" title="DEVELOPMENT STATUS">
 				<div className={styles.statusBadges}>
 					<StatusBadge label="STATE" value="PRE-V1.0" />
-					<StatusBadge label="THEMES" value="27" />
-					<StatusBadge label="COLLECTIONS" value="5" />
-					<StatusBadge label="ADAPTERS" value="6" />
+					<StatusBadge label="THEMES" value="38" />
+					<StatusBadge label="COLLECTIONS" value="6" />
+					<StatusBadge label="ADAPTERS" value="11" />
 				</div>
 				<p>
 					Pre-v1.0 Development — Core system operational with active expansion
 					in progress.
 				</p>
 				<p>
-					<strong>Current State:</strong> 27 themes across 5 collections built
-					with OKLCH color space. 6 production-ready platform adapters generated
-					from centralized core using adapter pattern.
+					<strong>Current State:</strong> 38 themes across 6 collections built
+					with OKLCH color space. 11 production-ready platform adapters
+					generated from centralized core using adapter pattern.
 				</p>
 				<p>
-					<strong>Pre-v1.0 Gaps:</strong> Missing VSCode adapter and complete
-					Obsidian support. No automated release infrastructure or language
-					packages for web-based theming.
+					<strong>Pre-v1.0 Gaps:</strong> Missing VSCode adapter. No automated
+					release infrastructure or language packages for web-based theming.
 				</p>
 				<p>
-					<strong>v1.0 Goals:</strong> Implement semantic-release system,
-					complete VSCode and Obsidian adapters, create language packages for
-					web integration.
+					<strong>v1.0 Goals:</strong> Implement semantic-release, add a
+					VSCode adapter, and create language packages for web integration.
 				</p>
 			</Section>
 
